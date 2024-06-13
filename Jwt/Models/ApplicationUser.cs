@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 
 namespace Jwt.Models
 {
@@ -6,5 +7,8 @@ namespace Jwt.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+
+        public List<RefreshToken>? RefreshTokens { get; set; }
     }
 }
